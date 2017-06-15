@@ -23,13 +23,15 @@ matrix:
       os: Visual Studio 2015
     - generator: "Visual Studio 14 2015"
       os: Visual Studio 2017
+    - generator: "MinGW Makefiles"
+      os: Visual Studio 2015
 
 init: []
 
 install: []
 
 build_script:
-  - set PATH=C:\MinGW\bin;%PATH%
+  - set PATH=C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\bin;%PATH%
   - set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
   - cmake . -G"%generator%" -DCMAKE_CXX_FLAGS="%additional_flags%"
   - cmake --build . --config Release
