@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 @ECHO off
 
 
-set "OUT_DIR=./Artifacts"
+set "OUT_DIR=./artifacts"
 set "CURR_DIR=."
 
 ::remove original artifacts (if any)
