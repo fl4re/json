@@ -1,0 +1,19 @@
+{
+  "name": "@sb/json",
+  "version": "2.1.51",
+  "description": "fl4re json",
+  "repository": "https://github.com/fl4re/json",
+  "private": false,
+  "binary": {
+    "file": "{package_name}/{package_version}/json-{package_version}-{platform}-{arch}.tar.gz",
+    "host": "https://registry-node.starbreeze.com/-/releases",
+    "os": "win32",
+    "path": [
+      "artifacts",
+      "artifacts/**"
+    ]
+  },
+  "scripts": {
+    "install": "prades install"
+  }
+}
